@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Corey Spangler answers voters' questions about Flock cameras and his ALPR plan for Cabot: undo the third-party system first, then decide — separately — whether Cabot should ever run its own." />
+<link rel="icon" href="data:," />
+<title>Voter FAQ on the ALPR Plan — Corey Spangler, Ward 1 Position 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f4f2ec;
+    --paper:#fffdf8;
+    --ink:#1a2432;
+    --ink-soft:#46536a;
+    --line:#d8d2c2;
+    --line-strong:#b9b09a;
+    --navy:#1c3350;
+    --navy-deep:#12253d;
+    --gold:#a67c1d;
+    --gold-soft:#f0e4c3;
+    --red:#9c2f23;
+    --green:#2e5c40;
+    --chip:#ece7d9;
+    --shadow:0 1px 2px rgba(26,36,50,.06),0 8px 28px rgba(26,36,50,.07);
+    --radius:10px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#10151d;
+      --paper:#171e29;
+      --ink:#ece7db;
+      --ink-soft:#a9b2c2;
+      --line:#2c3646;
+      --line-strong:#46536a;
+      --navy:#8fb0d8;
+      --navy-deep:#c8daf2;
+      --gold:#d2a94e;
+      --gold-soft:#33301f;
+      --red:#e08a7d;
+      --green:#8fc7a5;
+      --chip:#232c3a;
+      --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 28px rgba(0,0,0,.3);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important}
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  .col{max-width:780px;margin:0 auto}
+
+  /* ---------- top strip ---------- */
+  .topstrip{
+    border-bottom:1px solid var(--line);
+    background:var(--paper);
+  }
+  .topstrip .wrap{
+    display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;justify-content:space-between;
+    padding-top:12px;padding-bottom:12px;
+    font-size:13.5px;color:var(--ink-soft);
+  }
+  .topstrip .who{font-weight:700;color:var(--ink);letter-spacing:.01em}
+  .topstrip a{color:var(--navy);font-weight:600;text-decoration:none}
+  .topstrip a:hover{text-decoration:underline}
+
+  /* ---------- hero ---------- */
+  .hero{padding:52px 0 8px}
+  .kicker{
+    display:inline-block;
+    font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold);
+    border:1px solid var(--gold);
+    padding:4px 10px;border-radius:999px;
+    margin-bottom:20px;
+  }
+  h1{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-weight:900;
+    font-size:clamp(2.1rem,5.4vw,3.4rem);
+    line-height:1.08;
+    letter-spacing:-.01em;
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  h1 .accent{color:var(--red)}
+  .lede{font-size:1.18rem;line-height:1.6;color:var(--ink-soft);margin:0 0 10px;max-width:44em}
+  .lede strong{color:var(--ink)}
+  .byline{
+    margin-top:22px;padding-top:16px;border-top:1px solid var(--line);
+    font-size:14.5px;color:var(--ink-soft);
+    display:flex;flex-wrap:wrap;gap:4px 22px;
+  }
+  .byline b{color:var(--ink)}
+
+  /* ---------- plain-english box ---------- */
+  .plain{
+    margin:34px 0 8px;
+    background:var(--navy-deep);
+    color:#f2ecdd;
+    border-radius:var(--radius);
+    padding:26px 28px;
+    box-shadow:var(--shadow);
+  }
+  @media (prefers-color-scheme: dark){
+    .plain{background:#1d2a3d;color:#ece7db}
+  }
+  .plain .label{
+    font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold-soft);opacity:.85;margin-bottom:10px;
+  }
+  .plain p{margin:0;font-size:1.13rem;line-height:1.62}
+  .plain p + p{margin-top:12px}
+  .plain strong{color:#fff}
+  @media (prefers-color-scheme: dark){ .plain strong{color:#fff} }
+
+  /* ---------- steps ---------- */
+  .steps-head{margin:52px 0 6px}
+  h2{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-weight:700;font-size:clamp(1.55rem,3.4vw,2.05rem);
+    line-height:1.2;margin:0 0 10px;color:var(--ink);
+  }
+  .section-intro{color:var(--ink-soft);margin:0 0 22px;max-width:46em}
+  .steps{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:8px 0 6px}
+  @media (max-width:720px){ .steps{grid-template-columns:1fr} }
+  .step{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-top:5px solid var(--navy);
+    border-radius:var(--radius);
+    padding:24px 24px 20px;
+    box-shadow:var(--shadow);
+  }
+  .step.step2{border-top-color:var(--gold)}
+  .step .num{
+    font-family:"Source Serif 4",Georgia,serif;font-weight:900;font-size:2rem;line-height:1;
+    color:var(--navy);
+  }
+  .step.step2 .num{color:var(--gold)}
+  .step h3{font-size:1.12rem;margin:10px 0 8px;line-height:1.35}
+  .step p{margin:0 0 10px;color:var(--ink-soft);font-size:.99rem}
+  .step p:last-child{margin-bottom:0}
+  .step .tag{
+    display:inline-block;margin-top:6px;font-size:12.5px;font-weight:700;
+    background:var(--chip);color:var(--ink);
+    padding:3px 9px;border-radius:999px;
+  }
+  .step-arrow{
+    text-align:center;color:var(--ink-soft);font-size:.95rem;margin:14px 0 0;
+  }
+
+  /* ---------- consensus ---------- */
+  .consensus{
+    margin-top:44px;background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);
+  }
+  .consensus h3{margin:0 0 6px;font-size:1.15rem}
+  .consensus > p{color:var(--ink-soft);margin:0 0 18px}
+  .camps{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch}
+  @media (max-width:720px){ .camps{grid-template-columns:1fr} .camp-join{transform:rotate(90deg);margin:0 auto} }
+  .camp{
+    border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:var(--bg);
+  }
+  .camp .camp-name{font-weight:800;font-size:.95rem;margin-bottom:4px}
+  .camp p{margin:0;color:var(--ink-soft);font-size:.95rem}
+  .camp .say{
+    display:block;margin-top:10px;font-family:"Source Serif 4",Georgia,serif;
+    font-weight:700;font-size:1.35rem;color:var(--red);
+  }
+  .camp-join{
+    align-self:center;font-family:"Source Serif 4",Georgia,serif;font-weight:900;
+    font-size:1.6rem;color:var(--gold);padding:0 2px;
+  }
+  .consensus .equals{
+    margin-top:18px;padding:14px 18px;border-radius:8px;
+    background:var(--gold-soft);color:var(--ink);
+    font-weight:600;font-size:1rem;
+  }
+  .consensus .equals b{color:var(--navy-deep)}
+  @media (prefers-color-scheme: dark){ .consensus .equals b{color:var(--gold)} }
+
+  /* ---------- record ---------- */
+  .record{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  @media (max-width:720px){ .record{grid-template-columns:1fr} }
+  .rec-card{
+    border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);
+    padding:22px 24px;box-shadow:var(--shadow);
+  }
+  .rec-card h3{margin:0 0 4px;font-size:1.05rem}
+  .rec-card .kind{
+    font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
+  }
+  .rec-card.chosen{border:2px solid var(--green)}
+  .rec-card.chosen .kind{color:var(--green)}
+  .rec-card p{margin:8px 0 0;color:var(--ink-soft);font-size:.98rem}
+  .rec-note{margin-top:16px;color:var(--ink-soft)}
+  .rec-note strong{color:var(--ink)}
+
+  /* ---------- guardrails ---------- */
+  .guard{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px;
+  }
+  @media (max-width:720px){ .guard{grid-template-columns:1fr} }
+  .g-item{
+    display:flex;gap:14px;background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);
+  }
+  .g-item .ic{
+    flex:0 0 auto;width:40px;height:40px;border-radius:9px;
+    background:var(--chip);display:grid;place-items:center;
+  }
+  .g-item .ic svg{width:22px;height:22px;stroke:var(--navy);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .g-item h3{margin:0 0 3px;font-size:1rem}
+  .g-item p{margin:0;color:var(--ink-soft);font-size:.95rem}
+
+  /* ---------- FAQ ---------- */
+  .faq-tools{display:flex;gap:10px;margin:0 0 14px}
+  .faq-tools button{
+    font:inherit;font-size:13.5px;font-weight:600;cursor:pointer;
+    background:var(--paper);color:var(--navy);border:1px solid var(--line-strong);
+    border-radius:999px;padding:6px 14px;
+  }
+  .faq-tools button:hover{border-color:var(--navy)}
+  details{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    margin-bottom:12px;box-shadow:var(--shadow);
+  }
+  details summary{
+    cursor:pointer;list-style:none;
+    padding:18px 52px 18px 22px;position:relative;
+    font-weight:700;font-size:1.04rem;line-height:1.4;color:var(--ink);
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{
+    content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);
+    font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.5rem;color:var(--gold);
+    transition:transform .18s ease;
+  }
+  details[open ] summary::after{transform:translateY(-50%) rotate(45deg)}
+  details summary:hover{color:var(--navy)}
+  details .a{padding:0 22px 20px;color:var(--ink-soft)}
+  details .a p{margin:0 0 12px}
+  details .a p:last-child{margin-bottom:0}
+  details .a strong{color:var(--ink)}
+  details .a ul{margin:0 0 12px;padding-left:22px}
+  details .a li{margin-bottom:6px}
+  details .a li:last-child{margin-bottom:0}
+
+  /* ---------- short version ---------- */
+  .shortbox{
+    margin-top:14px;background:var(--paper);border:1px solid var(--line);
+    border-left:5px solid var(--gold);
+    border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow);
+  }
+  .shortbox h3{margin:0 0 10px;font-size:1.05rem}
+  .shortbox .post{white-space:pre-wrap;color:var(--ink);font-size:1rem;line-height:1.62;margin:0}
+  .copyrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:18px}
+  .copybtn{
+    font:inherit;font-weight:700;font-size:14.5px;cursor:pointer;
+    background:var(--navy-deep);color:#fff;border:none;border-radius:8px;
+    padding:11px 20px;
+  }
+  @media (prefers-color-scheme: dark){ .copybtn{background:var(--gold);color:#171207} }
+  .copybtn:hover{filter:brightness(1.12)}
+  .copymsg{font-size:14px;color:var(--green);font-weight:600;min-height:1.2em}
+
+  /* ---------- closing ---------- */
+  .closing{
+    margin:56px 0 0;background:var(--navy-deep);color:#f2ecdd;border-radius:var(--radius);
+    padding:30px 30px 26px;box-shadow:var(--shadow);
+  }
+  @media (prefers-color-scheme: dark){ .closing{background:#1d2a3d} }
+  .closing h2{color:#fff;margin-bottom:12px}
+  .closing p{margin:0 0 12px;color:#d9d2bf;max-width:46em}
+  @media (prefers-color-scheme: dark){ .closing p{color:#c3ccd9} }
+  .closing p strong{color:#fff}
+  .closing .tagline{
+    margin-top:18px;font-family:"Source Serif 4",Georgia,serif;font-weight:700;
+    font-size:1.15rem;color:var(--gold-soft);
+  }
+  footer{
+    padding:30px 0 46px;color:var(--ink-soft);font-size:14px;
+  }
+  footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
+  footer a{color:var(--navy)}
+  section{margin-top:54px}
+  .first{margin-top:44px}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span><span class="who">Corey Spangler</span> &nbsp;·&nbsp; Cabot City Council, Ward 1, Position 2 &nbsp;·&nbsp; Seeking re-election November 3, 2026</span>
+    <a href="https://CoreySpangler.org">CoreySpangler.org</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap"><div class="col">
+    <span class="kicker">Voter FAQ · License Plate Readers</span>
+    <h1>First, undo what we have. <span class="accent">Then</span> decide what's next.</h1>
+    <p class="lede">I've said this in comments around town, and I want to say it plainly here: <strong>I am not for a first-party camera system.</strong> My position starts one step earlier — with the system Cabot already has, run by a private, out-of-state company — and with a simple question: <strong>do we want to keep it?</strong></p>
+    <p class="lede">If the answer is no, we undo it. Whether Cabot should ever run a system of its own is a different question, for a different day, decided in public. This page walks through both — in that order.</p>
+    <div class="byline">
+      <span><b>Who's answering:</b> Corey Spangler, in my own words</span>
+      <span><b>Topic:</b> Flock cameras &amp; automated license plate readers (ALPR) in Cabot</span>
+    </div>
+  </div></div>
+</header>
+
+<main class="wrap"><div class="col">
+
+  <div class="plain" role="note">
+    <div class="label">My position in plain English</div>
+    <p><strong>Step one:</strong> end the third-party system. I introduced an ordinance to cut off city funding for third-party ALPR — because the first question isn't "city cameras or company cameras?" It's <strong>"do we keep what we already have?"</strong></p>
+    <p><strong>Step two — later, and only if voters want it:</strong> decide whether Cabot should ever run an in-house system, controlled here, subject to public oversight — for example, with no data retention at all. I haven't decided that for you, and I'm not asking you to decide it now.</p>
+  </div>
+
+  <!-- Two steps -->
+  <section class="first">
+    <div class="steps-head">
+      <h2>Two questions. Don't let anyone merge them.</h2>
+      <p class="section-intro">Most of the argument in Cabot right now treats this as one question with two answers: keep Flock, or ban cameras. It isn't. It's two questions, and they have to be answered in order.</p>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <div class="num">1</div>
+        <h3>Do we keep the system we already have?</h3>
+        <p>Today, Cabot's plate readers are owned and run by a third-party vendor on a subscription. Our travel data sits in systems we don't control and can't fully audit.</p>
+        <p>My answer is no — and my ordinance cuts off the city funding that keeps that arrangement alive.</p>
+        <span class="tag">This is the decision in front of us now</span>
+      </article>
+      <article class="step step2">
+        <div class="num">2</div>
+        <h3>Should Cabot ever run its own system?</h3>
+        <p>Only after step one is settled — and only as its own public decision. If we ever have cameras, they should be controlled by the city, subject to public oversight, with rules set by people Cabot voters can hold accountable — for example, no data retention.</p>
+        <p>I'm not for that system. I'm for asking the question honestly, later, instead of letting a vendor contract answer it for us.</p>
+        <span class="tag">A separate decision, made in the open</span>
+      </article>
+    </div>
+    <p class="step-arrow">Answer question 1 first. Question 2 doesn't get answered by default, by contract renewal, or by me.</p>
+  </section>
+
+  <!-- Consensus -->
+  <section>
+    <h2>Where the consensus actually is</h2>
+    <p class="section-intro">People assume the two sides of this debate agree on nothing. On the first question, I don't think that's true.</p>
+    <div class="consensus">
+      <h3>Ask the first question, and listen to the answers</h3>
+      <p>"Do you want to keep the third-party system Cabot has now?"</p>
+      <div class="camps">
+        <div class="camp">
+          <div class="camp-name">Voters who oppose Flock</div>
+          <p>They've been clear and consistent — they don't want these cameras, and they don't want this company holding Cabot's data.</p>
+          <span class="say">"No." — 100%</span>
+        </div>
+        <div class="camp-join" aria-hidden="true">+</div>
+        <div class="camp">
+          <div class="camp-name">Voters who support plate readers</div>
+          <p>Many of them support the tool for public safety — but that doesn't mean they believe it should be run by a third party, on a subscription, outside local control.</p>
+          <span class="say" style="color:var(--navy)">Ask them.</span>
+        </div>
+      </div>
+      <p class="equals">If enough of the pro-camera crowd agrees this <b>shouldn't be done by a third party</b>, then we have a consensus — not on cameras forever, but on <b>undoing what we have</b>. Let's start there.</p>
+    </div>
+  </section>
+
+  <!-- Record -->
+  <section>
+    <h2>What I actually did: an ordinance, not a performance</h2>
+    <p class="section-intro">There's a difference between saying something and doing something, and it matters on this issue.</p>
+    <div class="record">
+      <article class="rec-card chosen">
+        <div class="kind">What I did · Binding</div>
+        <h3>I introduced an ordinance</h3>
+        <p>An ordinance is law. Mine prohibits city funds — sales tax revenue, grants, and asset forfeitures — from being spent on third-party ALPR systems. It honors existing contracts until they expire, protects routine equipment like body cameras and dashcams, and preserves cost-free investigative leads shared by other agencies.</p>
+      </article>
+      <article class="rec-card">
+        <div class="kind">What I abstained from · Symbolic</div>
+        <h3>A voice resolution to "take the cameras down"</h3>
+        <p>A resolution is a statement of opinion. It doesn't bind spending, cancel a contract, or change a single data practice. At the same meeting, I abstained from it — not because I want the cameras to stay, but because I'd rather pass the thing that actually ends the arrangement than perform agreement with the thing that doesn't.</p>
+      </article>
+    </div>
+    <p class="rec-note">I've been called cautious for that abstention. Fair enough — but <strong>caution about symbolism isn't support for Flock.</strong> If we want the third-party system gone, the ordinance is the tool that does it, and it's the one I put my name on.</p>
+  </section>
+
+  <!-- Guardrails -->
+  <section>
+    <h2>If question 2 ever gets asked, here are my non-negotiables</h2>
+    <p class="section-intro">I'm not proposing an in-house system. But if Cabot ever debates one, I'll only take part in that conversation under public oversight rules like these — the same safeguards written into my plan. A license plate reader should read plates. Nothing more.</p>
+    <div class="guard">
+      <div class="g-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 11v6M14 11v6"/></svg></div>
+        <div>
+          <h3>30-day purge — or no retention at all</h3>
+          <p>Non-evidentiary scans are deleted after 30 days, with certificates proving the purge. And "no data retention" is squarely on the table for any in-house design.</p>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c1.2-3.2 3.8-4.8 7-4.8s5.8 1.6 7 4.8M4 4l16 16"/></svg></div>
+        <div>
+          <h3>No facial recognition</h3>
+          <p>Banned outright — along with audio recording. Reading a plate is not a license to identify a face or listen in.</p>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V9m5.5 10V5M15 19v-8m5 8V7"/></svg></div>
+        <div>
+          <h3>No predictive policing</h3>
+          <p>No algorithms deciding who looks suspicious or where police should watch. That's a judgment call for accountable humans, not software.</p>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/><path d="M3 3l18 18"/></svg></div>
+        <div>
+          <h3>No wireless tracking</h3>
+          <p>No Bluetooth or Wi-Fi MAC harvesting, no tracking phones or devices as they move through town. Plates only — and only under the rules above.</p>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></svg></div>
+        <div>
+          <h3>Public reporting, on the record</h3>
+          <p>Monthly statistics in the council agenda packet and a public report every six months: plates scanned, alert hits by category, verified hits vs. false positives, and outside searches. If the numbers look bad, you'll see it.</p>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div>
+          <h3>Independent audits</h3>
+          <p>Annual independent security audits and penetration testing, with the results public. Trust isn't the oversight plan — verification is.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Questions voters ask me</h2>
+    <p class="section-intro">Straight answers, in the order voters usually ask them.</p>
+    <div class="faq-tools">
+      <button type="button" id="expandAll">Expand all</button>
+      <button type="button" id="collapseAll">Collapse all</button>
+    </div>
+    <div id="faqList">
+      <details open>
+        <summary>What are Flock cameras, and what's happening with them in Cabot right now?</summary>
+        <div class="a">
+          <p>They're automated license plate readers (ALPR) — cameras that scan passing plates and check them against hotlists — run by Flock Safety, a private, out-of-state company, under a subscription contract with the city.</p>
+          <p>Right now, Cabot's cameras are <strong>covered and suspended</strong> while the city decides their future. That pause is exactly why this conversation matters: what happens next should be a deliberate public decision, not a contract quietly renewing itself.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>So what is your position, in one sentence?</summary>
+        <div class="a">
+          <p><strong>Undo the third-party system first; decide later — separately, and in public — whether Cabot should ever run a system of its own.</strong></p>
+          <p>That's it. Anyone who tells you my position is "Corey wants the city to build its own camera network" is skipping step one and misquoting step two.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Are you for an in-house, first-party system?</summary>
+        <div class="a">
+          <p><strong>No. I am not for a first-party system,</strong> and I want to correct that wherever it's been said about me.</p>
+          <p>What I've said — a few times, in comments — is narrower: <em>if</em> we are going to have plate readers at all, they should be controlled by the city and subject to public oversight, not run by a third-party vendor. That's a principle about control and accountability, not a proposal to build something.</p>
+          <p>My actual proposal is step one: undo what we have. The in-house question only comes after that, as its own decision — and "no system at all" is a legitimate answer to it.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why start with "do we keep what we already have?"</summary>
+        <div class="a">
+          <p>Because it's the question where Cabot can actually agree. <strong>100% of the anti-Flock side says no</strong> — they don't want the current system kept. And if enough pro-Flock voters agree that this shouldn't be done by a third party, then we have a consensus big enough to act on.</p>
+          <p>Starting anywhere else — arguing about hypothetical future systems — divides people who actually agree about the thing in front of us. Let's start where the agreement is, undo the current arrangement, and then have the next debate with a clean slate.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Did you vote to get rid of the cameras? Why did you abstain?</summary>
+        <div class="a">
+          <p>I <strong>introduced an ordinance</strong> to prohibit city funds from being spent on third-party ALPR systems. An ordinance is binding law — it's the mechanism that actually ends the funding and the arrangement.</p>
+          <p>At the same meeting, I <strong>abstained from a voice resolution</strong> calling to take the cameras down for good. A resolution is a statement; it binds nothing and cancels nothing. I won't pretend a symbolic vote is a solution when I have a real one on the table. Preferring the ordinance over the resolution isn't hesitation about the goal — it's insistence on the tool that reaches it.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What exactly does your ordinance do?</summary>
+        <div class="a">
+          <ul>
+            <li><strong>Cuts off the money:</strong> no city funds — sales tax revenue, grants, or asset forfeitures — may be spent on third-party ALPR subscriptions.</li>
+            <li><strong>Honors existing contracts</strong> until they expire. We end this the lawful way, not the lawsuit way.</li>
+            <li><strong>Protects normal police equipment:</strong> body cameras, dashcams, facility cameras, and traffic systems are not touched.</li>
+            <li><strong>Preserves free investigative leads</strong> shared by other agencies at no cost to Cabot.</li>
+          </ul>
+          <p>It does not ban police from doing police work. It ends a vendor arrangement — which is the thing voters are actually arguing about.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does ending the third-party system make Cabot less safe?</summary>
+        <div class="a">
+          <p>That's the framing the vendor benefits from, and I'd ask you to notice it. The question in front of us isn't "safety or no safety." It's <strong>whether a private company should own the tool, hold the data, and bill us forever for it.</strong></p>
+          <p>Officers keep their body cameras, dashcams, radios, and the free leads other agencies share. What ends is the subscription and the data pipeline running through a third party. And if Cabot later decides it wants a tool of its own, that's question two — debated on its merits, in public, with oversight attached from day one.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What stops a wrongful stop based on a bad camera read?</summary>
+        <div class="a">
+          <p>Under the oversight rules in my plan, no stop happens on a camera read alone. Three steps are required first:</p>
+          <ul>
+            <li><strong>Visual plate verification</strong> — a human confirms the plate actually matches.</li>
+            <li><strong>Hotlist confirmation</strong> through dispatch and state/federal databases.</li>
+            <li><strong>Occupant identification</strong> before any stop proceeds.</li>
+          </ul>
+          <p>A camera flag is a lead to check, not a conclusion. Cabot has seen what happens when that distinction gets blurred, and the rules should make it impossible to blur.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Who can see my travel data — and for how long?</summary>
+        <div class="a">
+          <p>Under the current third-party arrangement, honestly, Cabot can't fully answer that — and that is itself the problem. Data flows into lateral sharing pools and national databases we don't monitor.</p>
+          <p>Under my plan, that ends. <strong>Non-evidentiary scans are purged after 30 days</strong>, with certificates proving the purge. The lateral sharing pools end too: no more sending Cabot residents' travel data to unmonitored databases, except through a formal bilateral compact or an exigent, case-by-case transfer. Public reports show total scans, hits, false positives, and every external search — so "who looked, and why" is a matter of record.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>If Cabot ever did build its own system, what would it look like?</summary>
+        <div class="a">
+          <p>To be clear again: I'm not proposing one, and it would only ever happen as a separate public decision after the third-party system is undone. But voters deserve to know the shape of that debate.</p>
+          <p>Any in-house system I'd take part in would be <strong>owned by Cabot, hosted in Cabot, and governed by people Cabot voters elect</strong> — subject to public oversight, with independent audits, the 30-day purge (or <strong>no data retention at all</strong>, which is absolutely on the table), and hard bans on facial recognition, predictive policing, and wireless tracking. No subscription, no vendor lock-in, no data leaving town by default.</p>
+          <p>And I won't promise it would be built immediately, cheaply, or at all. That's what "a separate decision" means.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why not just keep Flock? It works, doesn't it?</summary>
+        <div class="a">
+          <p>Because "it works" skips every question that matters: it works <strong>for whom, at what cost, holding whose data, under whose control?</strong></p>
+          <p>Keeping it means a permanent drain of taxpayer dollars to a vendor we don't control, for data practices we can't audit, renewed by inertia instead of by a vote. Fiscal responsibility, local control, and privacy aren't three different positions here — they're the same position. Undoing the third-party system is where all three point.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What happens next?</summary>
+        <div class="a">
+          <p>Question one gets decided the way it should be: in the open, by elected officials voting on a binding ordinance — the one I've introduced — informed by exactly this conversation with voters.</p>
+          <p>Then, and only then, question two gets its own honest debate: should Cabot run anything of its own, under what oversight, with what retention rules — including the option of nothing at all. I'll take part in that debate as your representative. I won't pre-decide it for you.</p>
+          <p>Election Day is <strong>November 3, 2026</strong>. However you vote, I'd rather you vote knowing exactly where I stand — including the parts that are more complicated than a slogan.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Short version -->
+  <section>
+    <h2>The short version</h2>
+    <p class="section-intro">The same position, sized for a Facebook post or a doorstep conversation. Copy it as-is.</p>
+    <div class="shortbox">
+      <h3>For sharing</h3>
+      <p class="post" id="shortPost">Let me clear something up, because I've seen my position described a few ways: I am NOT for a first-party camera system.
+
+Here's where I actually stand. The first question isn't whether the city should build its own cameras. It's whether we want to keep what we already have — a system run by a third-party, out-of-state company, holding Cabot's data, on our dime.
+
+100% of the anti-Flock side says no. And if enough pro-Flock voters agree this shouldn't be done by a third party, then we have a consensus. Let's start there: undo what we have.
+
+That's why I introduced an ordinance to cut off city funding for third-party ALPR — a binding law, not the symbolic resolution I abstained from. A resolution says something. An ordinance does something.
+
+Only after that's settled do we ask the second question, separately and in public: should Cabot ever run its own in-house system, controlled here and subject to public oversight — for example, with no data retention at all? I'm not asking you to answer that today. I'm asking that nobody — no vendor, no contract renewal — answers it for us by default.
+
+Fiscal responsibility. Local control. Privacy. Same position.
+
+— Corey Spangler, Ward 1, Position 2
+#MakePoliticsBoringAgain</p>
+      <div class="copyrow">
+        <button type="button" class="copybtn" id="copyBtn">Copy the short version</button>
+        <span class="copymsg" id="copyMsg" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <div class="closing">
+    <h2>Start where we agree</h2>
+    <p>You don't have to agree with me about cameras in general to agree that <strong>a third-party company shouldn't be running this in Cabot.</strong> That's the consensus in front of us, and it's enough to act on.</p>
+    <p>Undo what we have. Then — together, in public, with oversight — decide what's next. That's the whole plan, and it starts with question one.</p>
+    <p class="tagline">#MakePoliticsBoringAgain</p>
+  </div>
+
+</div></main>
+
+<footer>
+  <div class="wrap">
+    <span>Corey Spangler · Cabot City Council, Ward 1, Position 2 · On the council since 2023</span>
+    <span>Election Day: <b>November 3, 2026</b> · <a href="https://CoreySpangler.org">CoreySpangler.org</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var items = Array.prototype.slice.call(document.querySelectorAll('#faqList details'));
+  document.getElementById('expandAll').addEventListener('click', function(){
+    items.forEach(function(d){ d.open = true; });
+  });
+  document.getElementById('collapseAll').addEventListener('click', function(){
+    items.forEach(function(d){ d.open = false; });
+  });
+
+  var btn = document.getElementById('copyBtn');
+  var msg = document.getElementById('copyMsg');
+  btn.addEventListener('click', function(){
+    var text = document.getElementById('shortPost').innerText;
+    function done(ok){
+      msg.textContent = ok ? 'Copied — ready to paste.' : 'Copy failed — select the text above and copy it manually.';
+      if (ok) { btn.textContent = 'Copied ✓'; setTimeout(function(){ btn.textContent = 'Copy the short version'; }, 2200); }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done(true); }, function(){ fallback(); });
+    } else { fallback(); }
+    function fallback(){
+      var range = document.createRange();
+      range.selectNodeContents(document.getElementById('shortPost'));
+      var sel = window.getSelection();
+      sel.removeAllRanges(); sel.addRange(range);
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch(e) { ok = false; }
+      sel.removeAllRanges();
+      done(ok);
+    }
+  });
+})();
+</script>
+</body>
+</html>
